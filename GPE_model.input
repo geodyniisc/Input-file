@@ -24,8 +24,8 @@ gzdir_rnr=off
 file_vbcs=0
 vel_bound_file=""
 
-ggrd_vtop_control=1
-ggrd_vtop_dir="/home/phd/20/esdaash/gpe_stress/"
+ggrd_vtop_control=0
+ggrd_vtop_dir=" "
 
 
 coor=3
@@ -36,8 +36,8 @@ mat_file=""
 
 # first two layers
 ggrd_mat_control=2
-ggrd_mat_file="/home/phd/20/esdaash/craton_updated/may24_cr/wo_hv/test"
-ggrd_mat_depth_file="/home/phd/20/esdaash/craton_updated/no_idaho/depth.dat"
+ggrd_mat_file="caton/test"
+ggrd_mat_depth_file="craton/depth.dat"
 ggrd_mat_is_code=2 # maximum code
 ggrd_mat_code_viscosities=10,20000
 
@@ -113,10 +113,10 @@ ggrd_tinit=1
 ggrd_tinit_scale=-0.084
 ggrd_tinit_limit_trange=1
 ggrd_tinit_scale_with_prem=0
-ggrd_tinit_prem_file="../../../data/prem/prem.dat"
+ggrd_tinit_prem_file=" "
 ggrd_tinit_offset=0
-ggrd_tinit_gfile="/home/phd/20/esdaash/LLNL/LLNL_slab_3.5/with_EPR/dvp"
-ggrd_tinit_dfile="/home/phd/20/esdaash/LLNL/tdepth.dat"
+ggrd_tinit_gfile="LLNL/dvp"
+ggrd_tinit_dfile="LLNL/tdepth.dat"
 
 self_gravitation=on
 
@@ -227,7 +227,7 @@ z_interface=0.700000
 
 # init tracer shapes from grid up to layer two (in analogy to mat control), i hope
 ictracer_grd_layers=1
-ictracer_grd_file="/home/phd/20/esdaash/plate_cratons/saf.grd"
+ictracer_grd_file="plate_boundary/saf.grd"
 
 regular_grid_deltheta=1.0
 regular_grid_delphi=1.0
